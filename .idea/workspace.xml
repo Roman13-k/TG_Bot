@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13cf7692-1057-4181-bc12-4c2aa451435b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/utils/graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/currency.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/currency.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/handlers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Dockerfile" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -92,7 +96,7 @@
       <workItem from="1748113003819" duration="10057000" />
       <workItem from="1748124829812" duration="2108000" />
       <workItem from="1748257171372" duration="764000" />
-      <workItem from="1748288028065" duration="1186000" />
+      <workItem from="1748288028065" duration="6814000" />
     </task>
     <servers />
   </component>
@@ -103,6 +107,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TG_bot$main.coverage" NAME="main Coverage Results" MODIFIED="1748289148855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TG_bot$main.coverage" NAME="main Coverage Results" MODIFIED="1748294715676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
