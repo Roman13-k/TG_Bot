@@ -6,9 +6,10 @@ A simple Telegram bot to get the current exchange rates of currencies to the Rus
 
 ## Features
 
-- Get currency rates with the command `/kurs <currency>`, for example: `/kurs USD`
-- The `/start` command shows a greeting and the list of available currencies
-- Supports main currencies: USD, EUR, GBP, etc.
+- Generate a 7-day exchange rate chart using the /graph <currency> command, e.g., /graph USD
+- Get the current exchange rate with /kurs <currency>, e.g., /kurs USD
+- The /start command displays a welcome message and a list of available currencies
+- Supports major currencies: USD, EUR, GBP, and more
 
 ---
 
@@ -17,7 +18,7 @@ A simple Telegram bot to get the current exchange rates of currencies to the Rus
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/telegram-currency-bot.git
+git clone https://github.com/Roman13-k/TG_Bot.git
 cd telegram-currency-bot
 ```
 
@@ -31,5 +32,6 @@ pip install -r requirements.txt
 
 ```bash
 TOKEN=your_telegram_bot_token
-CB_URL=https://www.cbr.ru/scripts/XML_daily.asp
+CB_URL="https://www.cbr.ru/scripts/XML_daily.asp"
+CB_DYNAMIC_URL = "https://www.cbr.ru/scripts/XML_dynamic.asp"
 ```
