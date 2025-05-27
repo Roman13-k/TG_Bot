@@ -1,10 +1,12 @@
 from utils.currency.rates import get_daily_currency
+from utils.rate_limiter import rate_limited
 
 user_states = {}
 
 
 def register_kurs_handler(bot):
     @bot.message_handler(commands=['kurs'])
+    @rate_limited(bot)
     def ask_currency(message):
         parts = message.text.strip().split()
         if len(parts) == 2:
@@ -22,6 +24,7 @@ def register_kurs_handler(bot):
                              "Пожалуйста, укажи код валюты (например: USD, EUR, GBP):")
 
     @bot.message_handler(func=lambda m: user_states.get(m.chat.id) == 'waiting_for_currency')
+    @rate_limited(bot)
     def handle_currency_input(message):
         currency_code = message.text.strip().upper()
         data = get_daily_currency(currency_code)

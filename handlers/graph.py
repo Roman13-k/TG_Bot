@@ -1,10 +1,12 @@
 from utils.currency.rates import get_currency_history
 from utils.graphs.currency_graph import draw_currency_graph
 from UI.loading import show_loading, hide_loading
+from utils.rate_limiter import rate_limited
 
 
 def register_graph_handler(bot):
     @bot.message_handler(commands=['graph'])
+    @rate_limited(bot)
     def graph(message):
         parts = message.text.strip().split()
 

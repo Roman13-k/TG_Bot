@@ -1,5 +1,9 @@
+from utils.rate_limiter import rate_limited
+
+
 def register_start_handler(bot):
     @bot.message_handler(commands=['start'])
+    @rate_limited(bot)
     def start(message):
         first_name = (message.from_user.first_name or "").capitalize()
         last_name = (message.from_user.last_name or "").capitalize()
