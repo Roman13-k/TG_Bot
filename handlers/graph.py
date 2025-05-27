@@ -1,5 +1,6 @@
 from utils.currency.rates import get_currency_history
 from utils.graphs.currency_graph import draw_currency_graph
+from UI.loading import show_loading, hide_loading
 
 
 def register_graph_handler(bot):
@@ -18,18 +19,23 @@ def register_graph_handler(bot):
 
         try:
             days = int(parts[2])
-            if days <= 0:
+            if days <= 0 or days > 365:
                 raise ValueError
         except ValueError:
-            bot.send_message(message.chat.id, "Количество дней должно быть положительным числом.")
+            bot.send_message(message.chat.id, "Неверное количество дней (от 1 до 365).")
             return
 
-        records = get_currency_history(currency_code, days)
-        if not records:
-            bot.send_message(message.chat.id,
-                             "Не удалось получить данные по валюте. Убедитесь, что указали правильный код.")
-            return
+        loading_msg = show_loading(bot, message.chat.id)
+        try:
+            records = get_currency_history(currency_code, days)
+            if not records:
+                bot.send_message(
+                    message.chat.id,
+                    "Не удалось получить данные по валюте. Убедитесь, что указали правильный код."
+                )
+                return
 
-        image_stream = draw_currency_graph(records, currency_code)
-
-        bot.send_photo(message.chat.id, image_stream)
+            image_stream = draw_currency_graph(records, currency_code)
+            bot.send_photo(message.chat.id, image_stream)
+        finally:
+            hide_loading(bot, message.chat.id, loading_msg)
