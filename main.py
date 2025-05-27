@@ -4,10 +4,12 @@ from handlers import register_all_handlers
 from utils.currency.codes import get_currency_code
 from utils.currency.rates import set_currency_codes
 from commands.set_commands import set_bot_commands
+from db.init_db import init_db
 
 bot = telebot.TeleBot(TOKEN)
 set_bot_commands(bot)
 register_all_handlers(bot)
+init_db()
 set_currency_codes(get_currency_code())
 
 if __name__ == '__main__':
