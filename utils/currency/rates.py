@@ -5,19 +5,10 @@ from datetime import datetime, timedelta
 
 CURRENCY_CODES = {}
 
+
 def set_currency_codes(codes: dict):
     global CURRENCY_CODES
     CURRENCY_CODES = codes
-
-def get_currency_code():
-    response = requests.get(CB_URL)
-    tree = ET.fromstring(response.text)
-    code = {}
-    for valute in tree.findall('Valute'):
-        char_code = valute.find('CharCode').text
-        val_code = valute.attrib.get('ID')
-        code[char_code] = val_code
-    return code
 
 
 def get_daily_currency(currency_code: str) -> dict | None:

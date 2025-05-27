@@ -15,7 +15,7 @@ def draw_currency_graph(records: dict, currency_code: str) -> BytesIO:
     plt.tight_layout()
 
     image_stream = BytesIO()
-    plt.savefig(image_stream,format='png')
+    plt.savefig(image_stream, format='png')
 
     image_stream.seek(0)
     return image_stream

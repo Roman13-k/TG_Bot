@@ -1,12 +1,13 @@
 import telebot
 from config import TOKEN
-from utils.handlers import register_handlers
-from utils.currency import get_currency_code, set_currency_codes
-from commands import commands
+from handlers import register_all_handlers
+from utils.currency.codes import get_currency_code
+from utils.currency.rates import set_currency_codes
+from commands.set_commands import set_bot_commands
 
 bot = telebot.TeleBot(TOKEN)
-commands(bot)
-register_handlers(bot)
+set_bot_commands(bot)
+register_all_handlers(bot)
 set_currency_codes(get_currency_code())
 
 if __name__ == '__main__':
