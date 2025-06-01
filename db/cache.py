@@ -1,10 +1,11 @@
 import json
 import time
 import sqlite3
+from config import DB_NAME
 
 
 def get_cached_currency(code: str, max_age: int = 3600):
-    conn = sqlite3.connect("db/cache.db")
+    conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     cursor.execute("SELECT response, timestamp FROM currency_cache WHERE currency = ?", (code,))
     row = cursor.fetchone()
@@ -19,7 +20,7 @@ def get_cached_currency(code: str, max_age: int = 3600):
 
 
 def set_cached_currency(code: str, data: dict):
-    conn = sqlite3.connect("db/cache.db")
+    conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     cursor.execute(
         "REPLACE INTO currency_cache (currency, response, timestamp) VALUES (?, ?, ?)",
@@ -27,4 +28,3 @@ def set_cached_currency(code: str, data: dict):
     )
     conn.commit()
     conn.close()
-

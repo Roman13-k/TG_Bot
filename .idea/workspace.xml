@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13cf7692-1057-4181-bc12-4c2aa451435b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e3111e1-e866-46ef-b16a-3cbc0efc0d67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1e3111e1-e866-46ef-b16a-3cbc0efc0d67.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7fd94a71-038a-40e9-b84f-9e6a3e89c1d5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7fd94a71-038a-40e9-b84f-9e6a3e89c1d5/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb3d8fa4-ad40-47bc-89f1-e6a06f499679.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb3d8fa4-ad40-47bc-89f1-e6a06f499679/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/cache.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/kurs.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/kurs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/init_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +103,7 @@
       <workItem from="1748347572329" duration="812000" />
       <workItem from="1748372594475" duration="7520000" />
       <workItem from="1748508812925" duration="176000" />
-      <workItem from="1748787460275" duration="1260000" />
+      <workItem from="1748787460275" duration="2143000" />
     </task>
     <servers />
   </component>
@@ -121,6 +114,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TG_bot$main.coverage" NAME="main Coverage Results" MODIFIED="1748788502778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TG_bot$main.coverage" NAME="main Coverage Results" MODIFIED="1748788770984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

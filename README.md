@@ -34,4 +34,5 @@ pip install -r requirements.txt
 TOKEN=your_telegram_bot_token
 CB_URL="https://www.cbr.ru/scripts/XML_daily.asp"
 CB_DYNAMIC_URL = "https://www.cbr.ru/scripts/XML_dynamic.asp"
+DB_NAME = "db/cache.db"
 ```
