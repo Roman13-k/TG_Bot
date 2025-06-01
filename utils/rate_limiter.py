@@ -3,7 +3,7 @@ from functools import wraps
 
 user_last_request = {}
 
-RATE_LIMIT_SECONDS = 3
+RATE_LIMIT_SECONDS = 1.5
 
 
 def rate_limited(bot):
